@@ -35,6 +35,21 @@
 .topnav-right {
   float: right;
 }
+
+/* container to hold image and text overlay */
+.container {
+  postion: relative;
+  text-center: center;
+  color: white;
+}
+
+/* centered text on image */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
   
 </style>
 </head>
@@ -51,12 +66,18 @@
   </div>
 </div>
 
+<div>
+  <img src="docs/assets/images/GithubBanner.png" alt="Leafy Image" width="1700" height="450"> 
+  <div class="centered">Hi everyone! Welcome to my page! I'm Hajera! Here you will find everything about me!
+  </div>
+</div>
+  
+<!--
 <div style="padding-left:16px">
   <h2>Hi everyone! Welcome to my page! I'm Hajera!</h1>
-  <p style="background-color:Tomato;">Here you will find everything about me! :)</p>
+  <p style="background-color:Tomato;">Here you will find everything about me!</p>
 </div>
-
- <img src="docs/assets/images/GithubBanner.png" alt="Leafy Image" width="1700" height="450"> 
+-->
   
 </body>
 </html>
