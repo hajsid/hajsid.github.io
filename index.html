@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<!--text<meta> name="viewport" content="width=device-width, initial-scale=1">--> 
-  
-
+<meta> name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
+/* Adding black background to top navigation */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+  
+<!--
 ul {
   list-style-type: none;
   margin: 0;
@@ -22,7 +27,19 @@ li {
 li:last-child {
   border-right: none;
 }
+-->
 
+/* Adding style to the links in the nav bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+<!--
 li a {
   display: block;
   color: white;
@@ -30,28 +47,65 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
+-->
 
+/* Set the links cover for hovering */
+.topnav a:hover {
+  background-color: #111;
+}
+  
+<!--
 li a:hover {
   background-color: #111;
 }
+-->
 
+/* Add color to current link */
+.topnav a.active {
+  background-color: rgb(115, 105, 184);
+  color: white;
+}
+  
+<!--
 .active {
   background-color: rgb(115, 105, 184)
 }
+-->
+
+/* top navigation section that will be right-aligned */
+.topnav-right {
+  float: right;
+}
+  
 </style>
 </head>
 <body>
 
+/* divsion for html elements */
+<div class="topnav">
+  <a>Hajera Siddiqui</a></li>
+  <div class="topnav-right">
+    <a class="active" href="#home">Home</a>
+    <a href="#home">Projects</a>
+    <a href="#home">About Me</a>
+    <a href="#home">Contact</a>
+  </div>
+</div>
+
+<div style="padding-left:16px">
+  <h2>Hi everyone! Welcome to my page! I'm Hajera!</h1>
+  <p style="background-color:Tomato;">Here you will find everything about me! :)</p>
+</div>
+
+/*
 <ul>
   <li><a>Hajera Siddiqui</a></li>
-  <li> style="float:right"><a class="active" href="#home">Home</a></li>
-  <li> style="float:right"><a href="#home">Portfolio</a></li>
-  <li> style="float:right"><a href="#home">About Me</a></li>
-  <li> style="float:right"><a href="#home">Contact</a></li>
+  <li> <a class="active" href="#home">Home</a></li>
+  <li> <a href="#home">Portfolio</a></li>
+  <li> <a href="#home">About Me</a></li>
+  <li> <a href="#home">Contact</a></li>
 </ul>
-
-<h1>Hi everyone! Welcome to my page! I'm Hajera!</h1>
-<p style="background-color:Tomato;">Here you will find everything about me! :)</p>
+*/
 
 </body>
 </html>
