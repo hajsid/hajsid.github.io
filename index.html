@@ -4,15 +4,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
-/* Adding blue background to top navigation */
+/* Adding blue background to top navigation and fixing in place */
 .topnav {
   overflow: hidden;
   background-color: rgb(45, 105, 184);
+  position: fixed;
+  top: 0;
+  width: 100%
 }
 
 /* Adding style to the links in the nav bar */
 .topnav a {
   float: left;
+  display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -34,6 +38,12 @@
 /* top navigation section that will be right-aligned */
 .topnav-right {
   float: right;
+}
+
+/* added margins so contents of page aren't hidden by fixed nav bar */
+.spacing {
+  padding: 16px;
+  margin-top: 30px;
 }
 
 /* container to hold image and text overlay */
@@ -86,27 +96,29 @@ html {
   </div>
 </div>
 
-<div class="container">
-  <img src="docs/assets/images/GithubBanner.png" alt="Leafy Image" style="width:100%;"> 
-  <div class="centered" style="font-size:30px">
-    <h1>Hi everyone! Welcome to my page! I'm Hajera!</h1>
-    <h2>Here you will find everything about me!</h2>
+<div class="spacing">
+  <div class="container">
+    <img src="docs/assets/images/GithubBanner.png" alt="Leafy Image" style="width:100%;"> 
+    <div class="centered" style="font-size:30px">
+      <h1>Hi everyone! Welcome to my page! I'm Hajera!</h1>
+      <h2>Here you will find everything about me!</h2>
+    </div>
   </div>
-</div>
-
-<div class="main" id="section1">
-  <h2>Projects</h2>
-  <p>Add content about projects here!</p>
-</div>
-
-<div class="main" id="section2">
-  <h2>About Me</h2>
-  <p>Add content about me here!</p>
-</div>
-
-<div class="main" id="section3">
-  <h2>Contact</h2>
-  <p>Add content about contact information here!</p>
+  
+  <div class="main" id="section1">
+    <h2>Projects</h2>
+    <p>Add content about projects here!</p>
+  </div>
+  
+  <div class="main" id="section2">
+    <h2>About Me</h2>
+    <p>Add content about me here!</p>
+  </div>
+  
+  <div class="main" id="section3">
+    <h2>Contact</h2>
+    <p>Add content about contact information here!</p>
+  </div>
 </div>
   
 </body>
