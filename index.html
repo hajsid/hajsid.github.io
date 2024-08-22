@@ -11,6 +11,7 @@
   position: fixed;
   top: 0;
   width: 100%
+  z-index:1; /* helps image and text overlay stay underneath nav bar*/
 }
 
 /* Adding style to the links in the nav bar */
@@ -55,7 +56,7 @@
 
 /* centered text on image */
 .centered {
-  position: relative;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
