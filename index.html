@@ -67,6 +67,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* adjust for scroll to precisely reach each section */
+#section1, #section2, #section3, #section3 {
+  height: 600px;
+  scroll-margin-top: 60px; /* Adjust value based on nav bar height */
+}
+
 #section1 {
   height: 600px;
   background-color: darkorange;
@@ -78,6 +84,11 @@ html {
 }
 
 #section3 {
+  height: 600px;
+  background-color: deepskyblue;
+}
+
+#section4 {
   height: 600px;
   background-color: deepskyblue;
 }
@@ -95,33 +106,35 @@ body {
 <div class="topnav">
   <a>Hajera Siddiqui</a></li>
   <div class="topnav-right">
-    <a class="active" href="#home">Home</a>
-    <a href="#section1">Projects</a>
-    <a href="#section2">About Me</a>
-    <a href="#section3">Contact</a>
+    <a class="active" href="#section1">Home</a>
+    <a href="#section2">Projects</a>
+    <a href="#section3">About Me</a>
+    <a href="#section4">Contact</a>
   </div>
 </div>
 
 <div class="spacing">
-  <div class="container">
-    <img src="docs/assets/images/GithubBanner.png" alt="Leafy Image" style="width:100%;"> 
-    <div class="centered" style="font-size:30px">
-      <h1>Hi everyone! Welcome to my page! I'm Hajera!</h1>
-      <h2>Here you will find everything about me!</h2>
+  <div> class="main" id="section1"
+    <div class="container">
+      <img src="docs/assets/images/GithubBanner.png" alt="Leafy Image" style="width:100%;"> 
+      <div class="centered" style="font-size:30px">
+        <h1>Hi everyone! Welcome to my page! I'm Hajera!</h1>
+        <h2>Here you will find everything about me!</h2>
+      </div>
     </div>
   </div>
   
-  <div class="main" id="section1">
+  <div class="main" id="section2">
     <h2>Projects</h2>
     <p>Add content about projects here!</p>
   </div>
   
-  <div class="main" id="section2">
+  <div class="main" id="section3">
     <h2>About Me</h2>
     <p>Add content about me here!</p>
   </div>
   
-  <div class="main" id="section3">
+  <div class="main" id="section4">
     <h2>Contact</h2>
     <p>Add content about contact information here!</p>
   </div>
