@@ -30,13 +30,11 @@
   background-color: DarkRed;
 }
 
-
-/* Add purple color to current link 
+/* Add purple color to current link
 .topnav a.active {
   background-color: rgb(115, 105, 184);
   color: white;
-}
-*/
+} */
 
 /* top navigation section that will be right-aligned */
 .topnav-right {
@@ -45,17 +43,17 @@
 
 /* added margins so contents of page aren't hidden by fixed nav bar */
 .spacing {
-  /* padding: 16px;*/ /* white spaces on side */
-  margin-top: 48px; /* distance from top */
+  padding: 16px;
+  margin-top: 30px;
 }
 
-/* container to hold image and text overlay 
+/* container to hold image and text overlay */
 .container {
   position: relative;
   text-align: center;
   color: white;
   height: 100%;
-} */
+}
 
 /* centered text on image */
 .centered {
@@ -71,25 +69,13 @@ html {
 }
 
 /* adjust for scroll to precisely reach each section */
-#sections1, #section2, #section3, #section4 {
+#section2, #section3, #section4 {
   height: 768px;
   scroll-margin-top: 60px; /* Adjust value based on nav bar height */
 }
 
 #section1 {
-  background-color: LightPink;
-  position: relative;
-  animation-name: animate;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes animate {
-  0%   {background-color:LightPink;}
-  25%  {background-color:LightCoral;}
-  50%  {background-color:LightPink;}
-  75%  {background-color:LightCoral;}
-  100% {background-color:LightPink;}
+  height: 768px;
 }
 
 #section2 {
@@ -120,7 +106,6 @@ body {
 <div class="topnav">
   <a>Hajera Siddiqui</a></li>
   <div class="topnav-right">
-    <!-- <a class="active" href="#section1">Home</a> -->
     <a href="#section1">Home</a>
     <a href="#section2">Projects</a>
     <a href="#section3">About Me</a>
@@ -129,29 +114,28 @@ body {
 </div>
 
 <div class="spacing">
-  <!-- <div class="container" id="section1"> -->
-  <div class="main" id="section1">
-    <!-- <img src="docs/assets/images/portfolio_image.png" alt="Leafy Image" style="width:100%; height:100%;"> --> 
+  <div class="container" id="section1">
+    <img src="docs/assets/images/portfolio_image.png" alt="Leafy Image" style="width:100%; height:100%;"> 
     <div class="centered" style="font-size:30px">
       <h1>Hi everyone! Welcome to my page! I'm Hajera!</h1>
       <h2>Here you will find everything about me!</h2>
     </div>
   </div>
-</div>
-
-<div class="main" id="section2">
-  <h2>Projects</h2>
-  <p>Add content about projects here!</p>
-</div>
   
-<div class="main" id="section3">
-  <h2>About Me</h2>
-  <p>Add content about me here!</p>
-</div>
+  <div class="main" id="section2">
+    <h2>Projects</h2>
+    <p>Add content about projects here!</p>
+  </div>
   
-<div class="main" id="section4">
-  <h2>Contact</h2>
-  <p>Add content about contact information here!</p>
+  <div class="main" id="section3">
+    <h2>About Me</h2>
+    <p>Add content about me here!</p>
+  </div>
+  
+  <div class="main" id="section4">
+    <h2>Contact</h2>
+    <p>Add content about contact information here!</p>
+  </div>
 </div>
   
 </body>
