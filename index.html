@@ -43,11 +43,16 @@
 
 /* added margins so contents of page aren't hidden by fixed nav bar */
 .spacing {
-  padding: 16px;
+  padding: 22px;
   margin-top: 30px;
 }
 
-/* container to hold image and text overlay */
+.sectionspacing {
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* container to hold image and text overlay 
 .container {
   position: relative;
   text-align: center;
@@ -55,13 +60,39 @@
   height: 100%;
 } */
 
-/* centered text on image */
+/* centered text on image 
 .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
- /* color: green */ /* not necessary */
+  text-align: center;
+ /* color: green */ /* not necessary 
+}
+
+.centered p {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+
+} */
+
+.centered {
+  display: flex;
+  flex-direction: column; /* will make h1 and h2 on diff lines*/
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+/* Styling */
+
+body {
+  margin: 0px;
+  color: #2E475D;    
 }
 
 /* add smooth scroll behavior */
@@ -92,21 +123,21 @@ html {
 }
 
 #section2 {
-  background-color: pink;
+  background-color: white;
 }
 
 #section3 {
-  background-color: deepskyblue;
+  background-color: white;
 }
 
 #section4 {
-  background-color: yellow;
+  background-color: white;
 }
 
-/* get rid of unnecessary white spaces on the sides */
+/* get rid of unnecessary white spaces on the sides 
 body {
    margin: 0px;
-}
+}*/
   
 </style>
 
@@ -126,30 +157,30 @@ body {
   </div>
 </div>
 
-<div class="spacing">
-  <div class="container" id="section1">
+<!-- <div class="container"> -->
+  <div class="spacing" id="section1">
     <!-- <img src="docs/assets/images/portfolio_image.png" alt="Leafy Image" style="width:100%; height:100%;"> -->
     <div class="centered" id="section1">
-      <h1>Hi everyone! Welcome to my page! I'm Hajera!</h1>
+      <h1 >Hi everyone! Welcome to my page! I'm Hajera!</h1>
       <h2>Here you will find everything about me!</h2>
     </div>
   <!-- </div> -->
   
-  <div class="main" id="section2">
+  <div class="sectionspacing" id="section2">
     <h2>Projects</h2>
     <p>Add content about projects here!</p>
   </div>
   
-  <div class="main" id="section3">
+  <div class="sectionspacing" id="section3">
     <h2>About Me</h2>
     <p>Add content about me here!</p>
   </div>
   
-  <div class="main" id="section4">
+  <div class="sectionspacing" id="section4">
     <h2>Contact</h2>
     <p>Add content about contact information here!</p>
   </div>
-</div>
+<!-- </div> -->
   
 </body>
 </html>
