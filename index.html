@@ -61,7 +61,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: blue
+ /* color: green */ /* not necessary */
 }
 
 /* add smooth scroll behavior */
@@ -70,14 +70,25 @@ html {
 }
 
 /* adjust for scroll to precisely reach each section */
-#section2, #section3, #section4 {
-  height: 768px;
-  scroll-margin-top: 60px; /* Adjust value based on nav bar height */
+#section1, #section2, #section3, #section4 {
+  height: 825px;
+  scroll-margin-top: 67px; /* Adjust value based on nav bar height */
 }
 
 #section1 {
-  height: 768px;
-  background-color: Lightpink;
+  background-color: LightPink;
+  position: relative;
+  animation-name: animate;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+  0%   {background-color:LightPink;}
+  25%  {background-color:LightCoral;}
+  50%  {background-color:LightPink;}
+  75%  {background-color:LightCoral;}
+  100% {background-color:LightPink;}
 }
 
 #section2 {
