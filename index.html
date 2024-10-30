@@ -53,9 +53,20 @@
   margin-left: 200px;
   margin-right: 200px;
 
-  background-color: #ffffff;  /* White background for the box */
+  /*
+  background-color: #ffffff;  White background for the box 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); Shadow effect
+  border-radius: 8px; Rounded corners 
+  */
+}
+
+.project-box {
+  padding: 15px;
+  margin: 20px 0; /* for white space between boxes */
+  background-color: #ffffff; /*w white background for box */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
   border-radius: 8px; /* Rounded corners */
+
 }
 
 /* container to hold image and text overlay 
@@ -178,38 +189,55 @@ ul.a {
   
   <div class="sectionspacing" id="section2">
     <h2>Projects</h2>
-    <h3><a href="https://github.com/nhathpham/Scalable-Bird-Detection-Forecast" target="_blank">Optimal Birdwatching in Massachusetts</a></h3>
-    <ul class="a">
-      <li>Built scalable time series models using Prophet, an open-source time-series forecasting tool by Meta, to forecast weekly detection rates
-        of 465 bird species in 14 MA counties (consisting of 6510 models), provided recommendations for optimal bird-watching spots and
-        times, and displayed forecasts on an interactive Tableau dashboard.</li>
-      <li>Extracted 8.5GB data, cleaned using 'auk' package in R, and streamlined dataset for preprocessing to analyze with the Prophet model.</li>
-      <li>Optimized model using logistic regression with saturating minimum to stabilize forecasts, cross- validation, grid search, and efficient
-        parameter testing using Python’s multiprocessing library. Evaluated model performance with RMSE and MAE metrics.</li>
-    </ul>
-    <h3><a href="https://github.com/saicharan-thirandas/Comparative-Analysis-Custom-Spark-Scikit-vs-SparkMLlib" target="_blank">Fraud Detection Using Scalable Machine Learning</a></h3>
-    <ul class="a">
-      <li>Compared accuracy and speed of prediction models ran with Spark's in-memory processing capabilities with prediction models available in Spark MLlib to determine which models are the most efficient in identifying financial fraud.</li>
-      <li>Manually implemented ensemble models with Scikit-Learn (Logistic Regression and Decision Tree). Trained in parallel using Spark.</li>
-      <li>Ran ensemble models and the Spark MLLib models (Decision Tree and Random Forest) on AWS EMR and conducted a comparative
-        analysis of the results, which were stored in AWS S3 buckets.</li>
-    </ul>
-    <h3>Medical Document Classification</h3>
-    <ul class="a">
-      <li>Used scikit-learn to apply TF-IDF alongside logistic regression and BERT-based models for medical speciality and medical document
-        type classification. Visualized both types of data by employing various techniques (t-SNE plots, confusion matrices)</li>
-    </ul>
-    <h3>N-Gram Language Model</h3>
-    <ul class="a">
-      <li>Created an n-gram language model with Shannon visualization and Laplace smoothing using Python and NLTK.
-      </li>
-    </ul>
-    <h3><a href="https://github.com/maldoroty/ds5110_project" target="_blank">Streaming Service Database</a></h3>
-    <ul class="a">
-      <li>Utilized MySQL to create a relational database to model a media streaming service from the administrative side with 15 tables.</li>
-      <li>Developed a command line CRUD app in Python to allow users to run commands on the media database and view the results.
-      </li>
-    </ul>
+
+    <!-- Project Boxes -->
+    
+    <div class="project-box">
+      <h3><a href="https://github.com/nhathpham/Scalable-Bird-Detection-Forecast" target="_blank">Optimal Birdwatching in Massachusetts</a></h3>
+      <ul class="a">
+        <li>Built scalable time series models using Prophet, an open-source time-series forecasting tool by Meta, to forecast weekly detection rates
+          of 465 bird species in 14 MA counties (consisting of 6510 models), provided recommendations for optimal bird-watching spots and
+          times, and displayed forecasts on an interactive Tableau dashboard.</li>
+        <li>Extracted 8.5GB data, cleaned using 'auk' package in R, and streamlined dataset for preprocessing to analyze with the Prophet model.</li>
+        <li>Optimized model using logistic regression with saturating minimum to stabilize forecasts, cross- validation, grid search, and efficient
+          parameter testing using Python’s multiprocessing library. Evaluated model performance with RMSE and MAE metrics.</li>
+      </ul>
+    </div>
+
+    <div class="project-box">
+      <h3><a href="https://github.com/saicharan-thirandas/Comparative-Analysis-Custom-Spark-Scikit-vs-SparkMLlib" target="_blank">Fraud Detection Using Scalable Machine Learning</a></h3>
+      <ul class="a">
+        <li>Compared accuracy and speed of prediction models ran with Spark's in-memory processing capabilities with prediction models available in Spark MLlib to determine which models are the most efficient in identifying financial fraud.</li>
+        <li>Manually implemented ensemble models with Scikit-Learn (Logistic Regression and Decision Tree). Trained in parallel using Spark.</li>
+        <li>Ran ensemble models and the Spark MLLib models (Decision Tree and Random Forest) on AWS EMR and conducted a comparative
+          analysis of the results, which were stored in AWS S3 buckets.</li>
+      </ul>
+    </div>
+
+    <div class="project-box">
+      <h3>Medical Document Classification</h3>
+      <ul class="a">
+        <li>Used scikit-learn to apply TF-IDF alongside logistic regression and BERT-based models for medical speciality and medical document
+          type classification. Visualized both types of data by employing various techniques (t-SNE plots, confusion matrices)</li>
+      </ul>
+    </div>
+
+    <div class="project-box">
+      <h3>N-Gram Language Model</h3>
+      <ul class="a">
+        <li>Created an n-gram language model with Shannon visualization and Laplace smoothing using Python and NLTK.
+        </li>
+      </ul>
+    </div>
+
+    <div class="project-box">
+      <h3><a href="https://github.com/maldoroty/ds5110_project" target="_blank">Streaming Service Database</a></h3>
+      <ul class="a">
+        <li>Utilized MySQL to create a relational database to model a media streaming service from the administrative side with 15 tables.</li>
+        <li>Developed a command line CRUD app in Python to allow users to run commands on the media database and view the results.
+        </li>
+      </ul>
+    </div>
   </div>
   
   <div class="sectionspacing" id="section3">
