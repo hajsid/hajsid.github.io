@@ -49,9 +49,10 @@
 
 .sectionspacing {
   padding: 15px;
-  margin-top: 30px;
+  margin: 30px 200px 30px 200px;
+  /* margin-top: 30px;
   margin-left: 200px;
-  margin-right: 200px;
+  margin-right: 200px; */
 
   /*
   background-color: #ffffff;  White background for the box 
@@ -119,9 +120,9 @@ html {
 
 /* adjust for scroll to precisely reach each section */
 #section1, #section2, #section3, #section4 {
-  height: 825px;
+  /* height: 825px; */
   scroll-margin-top: 67px; /* Adjust value based on nav bar height */
-  padding-bottom: 400px;
+  padding-bottom: 30px;
 }
 
 #section1 {
@@ -130,6 +131,7 @@ html {
   animation-name: animate;
   animation-duration: 6s;
   animation-iteration-count: infinite;
+  min-height: 500px;
 }
 
 @keyframes animate {
